@@ -39,4 +39,11 @@ public class WordTest {
     Word testWord = new Word("Hemoglobin");
     assertEquals(1, testWord.getId());
   }
+
+  @Test
+  public void find_returnsWordWithSameId_secondWord() {
+    Word firstWord = new Word("Bacteria");
+    Word secondWord = new Word("Antibody");
+    assertEquals(Word.find(secondWord.getId()), secondWord);
+  }
 }
