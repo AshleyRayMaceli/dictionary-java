@@ -41,4 +41,11 @@ public class DefinitionTest {
     Definition testDefinition = new Definition("Definition goes here");
     assertEquals(1, testDefinition.getId());
   }
+
+  @Test
+  public void find_returnsDefinitionWithSameID_secondDef() {
+    Definition firstDef = new Definition("First definition");
+    Definition secondDef = new Definition("Second definition");
+    assertEquals(Definition.find(secondDef.getId()), secondDef);
+  }
 }
