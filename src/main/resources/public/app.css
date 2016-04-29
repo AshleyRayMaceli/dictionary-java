@@ -1,0 +1,77 @@
+body {
+  text-align: center;
+  background-image: url(../neurons.jpg);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 80px;
+  text-shadow: 10px 10px 15px black;
+  margin-top: 40px;
+}
+
+a {
+  margin-top: 20px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 10px 10px 15px black;
+}
+
+a:hover {
+  font-size: 45px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 10px 10px 15px black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 70px;
+  text-shadow: 10px 10px 15px black;
+}
+
+.title h1 {
+  font-size: 90px;
+  margin-top: 200px;
+  text-shadow: 10px 10px 15px black;
+}
+
+h2 {
+  text-shadow: 10px 10px 15px black;
+}
+
+#word {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 10pt;
+  width: 700px;
+  height: 70px;
+  color: #B80000;
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+#definition {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 10pt;
+  width: 700px;
+  height: 70px;
+  color: #B80000;
+  font-size: 25pt;
+  object-position: center;
+}
+
+.btn {
+  height: 65px;
+  width: 230px;
+  font-weight: bold;
+  font-size: 20pt;
+  color: black;
+}

@@ -2,11 +2,10 @@
 
 <form action="/definitions" method="post">
   <input id="wordId" name="wordId" type="hidden" value="$word.getId()">
+    <label for="definition"></label>
+    <input id="definition" name="definition" type="text">
 
-  <div class="form-group">
-    <label for="definition">Definition</label>
-    <input id="definition" name="definition" type="text" class="form-control">
+  <div>
+      <button type="submit" class="btn btn-warning">Add Definition</button>
   </div>
-
-  <button type="submit" class="btn btn-success">Add Definition</button>
 </form>
