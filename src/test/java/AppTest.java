@@ -43,7 +43,6 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Genome");
   }
 
-  // stale element issue
   @Test
   public void wordShowPageDisplaysName() {
     goTo("http://localhost:4567/words/new");
@@ -52,5 +51,16 @@ public class AppTest extends FluentTest {
     click("a", withText("View Words"));
     goTo("http://localhost:4567/words/1");
     assertThat(pageSource()).contains("Genome");
+  }
+
+  @Test
+  public void wordDefinitionsFormisDisplayedCorrectly() {
+    goTo("http://localhost:4567/words/new");
+    fill("#word").with("Genome");
+    submit(".btn");
+    click("a", withText("View Words"));
+    goTo("http://localhost:4567/words/1");
+    click("a", withText("Add a New Definition"));
+    assertThat(pageSource()).contains("Add a definition to Genome");
   }
 }
