@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 public class DefinitionTest {
 
+  @After
+  public void tearDown() {
+    Definition.clear();
+  }
+
   @Test
   public void Definition_instantiatesCorrectly_true() {
     Definition testDefinition = new Definition("This is a definition for a word");
@@ -22,5 +27,12 @@ public class DefinitionTest {
     Definition secondDef = new Definition("Second definition");
     assertTrue(Definition.all().contains(firstDef));
     assertTrue(Definition.all().contains(secondDef));
+  }
+
+  @Test
+  public void clear_emptiesAllDefinitionsFromArrayList_0() {
+    Definition testDefinition = new Definition("Definition goes here");
+    Definition.clear();
+    assertEquals(Definition.all().size(), 0);
   }
 }

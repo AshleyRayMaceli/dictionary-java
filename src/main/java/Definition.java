@@ -16,4 +16,8 @@ public class Definition {
   public static ArrayList<Definition> all() {
     return allDefinitions;
   }
+
+  public static void clear() {
+    allDefinitions.clear();
+  }
 }
