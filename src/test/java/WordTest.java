@@ -46,4 +46,9 @@ public class WordTest {
     Word secondWord = new Word("Antibody");
     assertEquals(Word.find(secondWord.getId()), secondWord);
   }
+
+  @Test
+  public void getTasks_returnsNullWhenNoWordFound_null() {
+    assertTrue(Word.find(999) == null);
+  }
 }
