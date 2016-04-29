@@ -1,5 +1,6 @@
 import org.junit.*;
 import static org.junit.Assert.*;
+import java.util.ArrayList;
 
 public class DefinitionTest {
 
@@ -10,8 +11,16 @@ public class DefinitionTest {
   }
 
   @Test
-public void Definition_instantiatesWithWordDescription_String() {
-  Definition testDefinition = new Definition("Definition goes here");
-  assertEquals("Definition goes here", testDefinition.getDefinition());
+  public void Definition_instantiatesWithWordDescription_String() {
+    Definition testDefinition = new Definition("Definition goes here");
+    assertEquals("Definition goes here", testDefinition.getDefinition());
+  }
+
+  @Test
+  public void all_returnsAllInstancesOfDefinition_true() {
+    Definition firstDef = new Definition("First definition");
+    Definition secondDef = new Definition("Second definition");
+    assertTrue(Definition.all().contains(firstDef));
+    assertTrue(Definition.all().contains(secondDef));
   }
 }
