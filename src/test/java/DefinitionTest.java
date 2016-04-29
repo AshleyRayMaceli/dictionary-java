@@ -8,4 +8,10 @@ public class DefinitionTest {
     Definition testDefinition = new Definition("This is a definition for a word");
     assertEquals(true, testDefinition instanceof Definition);
   }
+
+  @Test
+public void Definition_instantiatesWithWordDescription_String() {
+  Definition testDefinition = new Definition("Definition goes here");
+  assertEquals("Definition goes here", testDefinition.getDefinition());
+  }
 }

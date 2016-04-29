@@ -4,4 +4,8 @@ public class Definition {
   public Definition(String wordDefinition) {
     mWordDefinition = wordDefinition;
   }
+
+  public String getDefinition() {
+  return mWordDefinition;
+  }
 }
