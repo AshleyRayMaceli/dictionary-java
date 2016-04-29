@@ -48,7 +48,15 @@ public class WordTest {
   }
 
   @Test
-  public void getTasks_returnsNullWhenNoWordFound_null() {
+  public void getWords_returnsNullWhenNoWordFound_null() {
     assertTrue(Word.find(999) == null);
+  }
+
+  @Test
+  public void addDefinitions_addsDefinitionsToList_true() {
+    Word testWord = new Word("Genome");
+    Definition testDef = new Definition("The complete set of genes or genetic material present in a cell or organism");
+    testWord.addDefinition(testDef);
+    assertTrue(testWord.getDefinitions().contains(testDef));
   }
 }
