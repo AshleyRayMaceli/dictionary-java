@@ -42,4 +42,15 @@ public class AppTest extends FluentTest {
     click("a", withText("View Words"));
     assertThat(pageSource()).contains("Genome");
   }
+
+  // stale element issue
+  @Test
+  public void wordShowPageDisplaysName() {
+    goTo("http://localhost:4567/words/new");
+    fill("#word").with("Genome");
+    submit(".btn");
+    click("a", withText("View Words"));
+    goTo("http://localhost:4567/words/1");
+    assertThat(pageSource()).contains("Genome");
+  }
 }
