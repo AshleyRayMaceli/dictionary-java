@@ -13,4 +13,12 @@ public class WordTest {
     Word testWord = new Word("Education");
     assertEquals("Education", testWord.getName());
   }
+
+  @Test
+  public void all_returnsAllInstancesOfCategory_true() {
+    Word firstWord = new Word("Luminescent");
+    Word secondWord = new Word("Microbiology");
+    assertTrue(Word.all().contains(firstWord));
+    assertTrue(Word.all().contains(secondWord));
+  }
 }
