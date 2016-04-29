@@ -3,6 +3,11 @@ import static org.junit.Assert.*;
 
 public class WordTest {
 
+  @After
+  public void tearDown() {
+    Word.clear();
+  }
+
   @Test
   public void word_instantiatesCorrectly_true() {
     Word testWord = new Word("Education");
@@ -26,6 +31,12 @@ public class WordTest {
   public void clear_emptiesAllWordsFromList_0() {
     Word firstWord = new Word("Dichotomous");
     Word.clear();
-    assertEquals(Word.all().size(), 0);
+    assertEquals(0, Word.all().size());
+  }
+
+  @Test
+  public void getId_wordsInstantiatesWithAnId_1() {
+    Word testWord = new Word("Hemoglobin");
+    assertEquals(1, testWord.getId());
   }
 }
