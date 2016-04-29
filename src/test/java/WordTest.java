@@ -15,10 +15,17 @@ public class WordTest {
   }
 
   @Test
-  public void all_returnsAllInstancesOfCategory_true() {
+  public void all_returnsAllInstancesOfWord_true() {
     Word firstWord = new Word("Luminescent");
     Word secondWord = new Word("Microbiology");
     assertTrue(Word.all().contains(firstWord));
     assertTrue(Word.all().contains(secondWord));
+  }
+
+  @Test
+  public void clear_emptiesAllWordsFromList_0() {
+    Word firstWord = new Word("Dichotomous");
+    Word.clear();
+    assertEquals(Word.all().size(), 0);
   }
 }

@@ -16,4 +16,8 @@ public class Word {
   public static ArrayList<Word> all() {
     return allWords;
   }
+
+  public static void clear() {
+    allWords.clear();
+  }
 }
