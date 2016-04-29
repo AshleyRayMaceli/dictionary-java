@@ -48,8 +48,14 @@ public class WordTest {
   }
 
   @Test
-  public void getWords_returnsNullWhenNoWordFound_null() {
+  public void find_returnsNullWhenNoWordFound_null() {
     assertTrue(Word.find(999) == null);
+  }
+
+  @Test
+  public void getWords_initiallyReturnsEmptyList_ArrayList() {
+    Word testWord = new Word("Genome");
+    assertEquals(0, testWord.getDefinitions().size());
   }
 
   @Test
