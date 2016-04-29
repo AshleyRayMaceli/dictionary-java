@@ -48,4 +48,9 @@ public class DefinitionTest {
     Definition secondDef = new Definition("Second definition");
     assertEquals(Definition.find(secondDef.getId()), secondDef);
   }
+
+  @Test
+  public void find_returnsNullWhenNoDefinitionFound_null() {
+    assertTrue(Definition.find(999) == null);
+  }
 }
