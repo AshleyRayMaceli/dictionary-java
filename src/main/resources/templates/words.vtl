@@ -1,11 +1,13 @@
-<h1>All Words</h1>
-<h2>Click on the word to add a definition for it</h2>
-<h2>Add as many definitions as you would like!</h2>
+<body class="all-words-page">
+  <h1>All Words</h1>
+  <h2>Click on the word to add a definition for it</h2>
+  <h2>Add as many definitions as you would like!</h2>
 
-<ul>
-  #foreach ($word in $words)
-    <li><a href="/words/$word.getId()">$word.getName()</a></li>
-  #end
-</ul>
+  <ul>
+    #foreach ($word in $words)
+      <li><a href="/words/$word.getId()">$word.getName()</a></li>
+    #end
+  </ul>
 
-<h3><a href="/words/new">Add New Word</a></h3>
+  <h3><a href="/words/new">Add New Word</a></h3>
+</body>

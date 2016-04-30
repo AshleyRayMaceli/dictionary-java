@@ -1,11 +1,15 @@
+<body class="def-form">
+
 <h1>Add a definition to $word.getName()</h1>
 
 <form action="/definitions" method="post">
   <input id="wordId" name="wordId" type="hidden" value="$word.getId()">
     <label for="definition"></label>
-    <input id="definition" name="definition" type="text">
+    <input id="definition" name="definition" type="text" required>
 
   <div>
-      <button type="submit" class="btn btn-warning">Add Definition</button>
+      <button type="submit" class="btn btn-info">Add Definition</button>
   </div>
 </form>
+
+</body>
