@@ -6,7 +6,7 @@
 
 ## Description
 
-_A web app designed with Java and Spark/Velocity as the framework. The user can add words and various definitions for each word. BDD testing was possible with the use of Gradle and JUnit. Integration testing was possible with the use of FluentLenium._
+_A web app designed with Java that makes use of objects within objects and uses Spark/Velocity as the framework. Designed as a science themed study guide but can be used for any combinations of words and definitions! The user can add words and various definitions for each word. BDD testing was possible with the use of Gradle and JUnit. Integration testing was possible with the use of FluentLenium._
 
 ## Setup/Installation Requirements
 
