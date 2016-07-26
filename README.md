@@ -1,3 +1,8 @@
+![Home Page](study_guide_1.png)
+![Word Entry](study_guide_2.png)
+![Definition Entry](study_guide_3.png)
+![All Words](study_guide_4.png)
+
 # _Study Guide Dictionary_
 
 #### _A web app where the user can add words and various definitions for each word. Perfect for studying purposes!_
@@ -10,6 +15,7 @@ _A web app designed with Java that makes use of objects within objects and uses 
 
 ## Setup/Installation Requirements
 
+* _Clone this repository and enter the directory through terminal_
 * _In console run the command 'gradle run'_
 * _Go to http://localhost:4567/_
 
